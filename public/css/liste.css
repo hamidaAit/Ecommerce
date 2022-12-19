@@ -1,0 +1,266 @@
+html{
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	float: left;
+	width: 100%;
+	height: 100%;
+	margin:0;
+
+}
+
+ header{
+ 	float: left;
+ 	width: 100%;
+ 	height: auto;
+ 	border-bottom-style: inset;
+ }
+ section{
+ 	width: 100%;
+ 	height: auto;
+ 	margin-left: auto;
+ 	margin-right: auto;
+	float: left;
+	margin:0%;
+	margin-bottom: 10%;
+}
+ footer{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+
+
+ .logo{
+	float: left;
+	width: 15%;
+}
+.menu{
+	float: left;
+	width: 85%;
+	height: auto;
+	align-items: center;
+    display: flex;
+
+ }
+
+
+.menu ul {
+	float: left;
+	width:65% ;
+	display: flex;
+	list-style: none;
+	font-size:18px;
+  }
+.menu ul li{
+	margin-right: 6%;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+.menu a:hover{
+	color: rgb(25 129 216);
+}
+.menu form{
+ 	float: left;
+ 	width: 20%;
+ }
+.menu form input{
+	border-radius: 20px;
+	border:none;
+	padding:4%;
+	text-align:center;
+	background-color:#F4F6F7;
+
+}
+.menu p{
+	float: left;
+	width: 5%;
+ 	}
+
+/*/section */
+
+.menu2{
+	float: left;
+	width:100%;
+	display: flex;
+ 	font-size: 18px;
+	border-bottom-style: inset;
+	padding-left:4%;
+}
+
+.menu2 a{
+	margin:1.3%;
+
+}
+.menu2 a:hover{
+	text-decoration: underline;
+}
+
+.toolbar{
+	float: left;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 2%;
+
+
+}
+
+ .filtre-menu{
+	float: left;
+}
+.filtre-menu button{
+	font-size: 15px;
+	border:none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.sortby{
+	float: right;
+		font-size: 18px;
+
+
+}
+.sortby select{
+	border-radius: 10px;
+	padding:2% 0 2%
+}
+.sliderfiltre{
+	transition: height 1s;
+	float: left;
+	width: 92%;
+	margin:2% 4% 2% 4%;
+	background-color:rgb(240, 255, 240);
+  	height: 0;
+   	overflow:hidden;/*il ya une autre methode*/
+
+}
+.form-div-slider{
+	float: left;
+ 	width: 15%;
+ 	font-size: 18px;
+
+ }
+.form-div-slider div{
+	display: flex;
+ 	flex-direction: row;
+ 	padding-left: 30%;
+}
+
+
+.articles{
+	float: left;
+	width:100%;
+
+}
+
+
+.article{
+ 	float: left;
+  	width: 15%;
+ 	text-align: center;
+}
+
+.img{
+	margin-top: 3%;
+	overflow: hidden;
+ 	height: 300px;
+}
+
+.img img{
+ 	width: 80%;
+}
+.article img:hover{
+	transform: scale(1.1);
+	transition-duration: 2s;
+}
+
+
+
+.page{
+ 	float: left;
+ 	width: 90%;
+ 	display: flex;
+ 	justify-content: center;
+}
+.page p{
+ 	margin-right: 2%;
+ }
+
+
+/*footer*/
+.footer1{
+	float: left;
+	width: 100%;
+   	border-bottom:1px solid;
+
+}
+.f1{
+	width:20%;
+}
+  .footer1 h3,.footer1 p{
+	margin-left: 14%;
+
+}
+  .footer1 ul{
+	list-style: none;
+}
+ footer a:hover{
+	text-decoration: underline;
+}
+
+ .footer2{
+ text-align: center;    }
+
+
+.iconmenu{
+	float: right;
+	width: 10%;
+	margin-top: 5%;
+	display: none;
+
+}
+.iconmenu button{
+	background-color: transparent;
+	border:none;
+	cursor: pointer;
+
+}
+
+ @media screen and (max-width:700px){
+	.menu {
+		width:30%;
+		height: 100%;
+ 		position: fixed;
+		display: none;
+ 		flex-direction: column;
+		background-color:rgb(240, 255, 240);
+ 	 }
+	 .menu ul{
+	 	flex-direction: column;
+	 	display: flex;
+	 	text-align: center;
+	 }
+	 .menu li{
+	 	margin-bottom: 8%;
+
+	 }
+	 .menu form {
+	 	width: 100%;
+	 	margin-bottom: 8%;
+	 }
+	 .menu p{
+		width: 25%;
+		margin-left:8%;
+  	 }
+	 .iconmenu{
+	 	display: block;
+	 }
+	}

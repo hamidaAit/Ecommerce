@@ -1,0 +1,55 @@
+body{
+	background-color: black;
+}
+form{
+	margin-top: 2%;
+	font-size: 18px;
+}
+
+.inscription{
+     margin: auto;
+     width: 30%;
+	 background-color:rgb(211 211 211)/*rgb(245 245 245)*/;
+     padding: 2%;
+     border-radius: 20px;
+}
+.form-div{
+	margin-top: 4%;
+	text-align: center;
+}
+h2{
+margin-left: 12%;
+padding-bottom: 5%;
+border-bottom-style:inset;
+}
+.type{
+	display: flex;
+	justify-content: center;
+}
+.label-input{
+	display: inline-block;
+	width: 120px;
+	text-align: left;
+}
+input{
+	border:none;
+	border-radius: 20px;
+	padding: 2%;
+}
+.btn
+{
+	text-align: center;
+	margin: 5%;	
+}
+.btn button{
+	background-color:rgb(155 155 255);
+	border-radius: 20px;
+	border:none;
+	padding: 3%;
+	width: 50%;
+	font-size: 18px;
+}
+.btn a{
+	text-decoration: none;
+	color: black;
+}
