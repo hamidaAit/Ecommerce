@@ -3,7 +3,8 @@
 <html lang="fr">
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="public/css/detail.css">
-<!-- <link rel="stylesheet" type="text/css" href="public/css/modal.css"> -->
+<link rel="stylesheet" type="text/css" href="public/css/modal.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" type="text/css" href="public/css/style_base.css">
 <script src="https://kit.fontawesome.com/974d4a2cd5.js" crossorigin="anonymous"></script>
 
@@ -18,7 +19,7 @@
 			<img src="public/img/logo.png">
 		</div>
 
-		<nav class="menu">
+		<nav class="menu" id="menu">
 			<ul>
 				<li><a href="index.html">Home</a> </li>
 				<li><a href="liste.html">Shop</a></li>
@@ -27,18 +28,20 @@
 				<li><a href="">Offer</a></li>
 			</ul>
 			<form>
-				<input type="recherche" placeholder="SEARCH">
+				<input type="search" placeholder="SEARCH">
 			</form>
 			<p><a href="" title='wishlist'><i class="fas fa-heart"></i> </a></p>
-			<p><a href="" title='card list' id="btnshop"><i class="fas fa-shopping-cart"></i></a></p>
-			<p><a href="" title='login' id="btncnx"><i class="fas fa-user-alt"></i></a></p>
+			<p><a href="" title='card list' id="btnshop"><i class="fas fa-shopping-cart"></a></i></p>
+			<p><a href="" title='login' id="btncnx"><i class="fas fa-user-alt"></a></i></p>
 		</nav>
-
+		<div class="iconmenu" id="iconmenu">
+			<button><i class="fas fa-bars"></i></button>
+		</div>
 	</header>
 
 
 	<section class="container">
-		<div class="menu2">
+		<div class="menu2 ">
 			<a href="#">Home</a>
 			<p><i class="fa fa-angle-right"></i></p>
 			<a href="#">Tous les produits</a>
@@ -46,10 +49,9 @@
 			<a href="#">Femme</a>
 		</div>
 		<div class="content1">
-			<div class="img">
+			<div class="img col-6 col-m-12 col-s-12">
 				<div class="miniformat">
 					<div class="image">
-
 						<img src="public/img/f4.jfif">
 					</div>
 					<div class="image">
@@ -66,11 +68,11 @@
 					<img src="public/img/f4.jfif">
 				</div>
 			</div>
-			<div class="txt">
+			<div class="txt col-6 col-m-12 col-s-12 ">
 				<h1>tenue femme all white tendance </h1>
 				<h4 class="prix"> 17889 dzd</h4>
 				<p>Tenue tres confortable,tendance,chic et classe pour des occasions ou tous les jours</p> <br>
-				<div class="form-div">
+				<div class="form-div-1">
 					<label class="label-input">Size</label>
 
 					<select class="form-input">
@@ -84,7 +86,7 @@
 					</select>
 
 				</div>
-				<div class="form-div">
+				<div class="form-div-1">
 					<label class="label-input" for="qnt">Quantity</label>
 					<select class="form-input" name="qnt" id="qnt">
 						<option>Select the quantity</option>
@@ -97,7 +99,7 @@
 					</select>
 
 				</div>
-				<div class="form-div">
+				<div class="form-div-1">
 					<label class="label-input" for="qnt">Color</label>
 					<select class="form-input" name="qnt" id="qnt">
 						<option>Select the color</option>
@@ -128,38 +130,36 @@
 			</div>
 		</div>
 
-
-		<div class="content2">
-			<div class="titre">
-				<p><a href="">Description</a> </p>
-				<p><a href=""> Additionnel information</a></p>
-				<p><a href=""> Shipping & returns</a></p>
-				<p> <a href="">Reviews</a> </p>
+		<div class="content2 col-s-12 col-m-12 col-12">
+			<div class="titre ">
+				<p><a href="discript1" id="btn-discript1" class="btn-discript">Description</a> </p>
+				<p><a href="discript2" id="btn-discript2" class="btn-discript"> Additionnel information</a></p>
+				<p><a href="discript3" id="btn-discript3" class="btn-discript"> Shipping & returns</a></p>
+				<p><a href="discript4" id="btn-discript4" class="btn-discript">Reviews</a> </p>
 			</div>
-
-
-			<div class="description">
+	
+	
+	
+			<div class=" div-discript modal-active" id="discript1" >
 				<p>
-					Une clé USB est un support de stockage amovible, inventé dans les années 2000 et prévue pour pouvoir
-					se brancher sur un port USB d'un ordinateur mais qui est, depuis plusieurs années, largement utilisé
-					sur d'autres appareils (chaînes Hi-Fi, lecteurs de DVD de salon, autoradios, radiocassettes,
-					téléviseurs, etc.). Une clé USB contient une mémoire flash et ne possède pas ou très peu d'éléments
-					mécaniques, ce qui la rend très résistante aux chocs.Une clé USB est un support de stockage
-					amovible, inventé dans les années 2000 et prévue pour pouvoir se brancher sur un port USB d'un
-					ordinateur mais qui est, depuis plusieurs années, largement utilisé sur d'autres appareils (chaînes
-					Hi-Fi, lecteurs de DVD de salon, autoradios, radiocassettes, téléviseurs, etc.). Une clé USB
-					contient une mémoire flash et ne possède pas ou très peu d'éléments mécaniques, ce qui la rend très
-					résistante aux chocs.
-					Une clé USB est un support de stockage amovible, inventé dans les années 2000 et prévue pour pouvoir
-					se brancher sur un port USB d'un ordinateur mais qui est, depuis plusieurs années, largement utilisé
-					sur d'autres appareils (chaînes Hi-Fi, lecteurs de DVD de salon, autoradios, radiocassettes,
-					téléviseurs, etc.). Une clé USB contient une mémoire flash et ne possède pas ou très peu d'éléments
-					mécaniques, ce qui la rend très résistante aux chocs.Une clé USB est un support de stockage
-					amovible, inventé dans les années 2000 et prévue pour pouvoir se brancher sur un port USB d'un
-					ordinateur mais qui est, depuis plusieurs années, largement utilisé sur d'autres appareils (chaînes
-					Hi-Fi, lecteurs de DVD de salon, autoradios, radiocassettes, téléviseurs, etc.). Une clé USB
-					contient une mémoire flash et ne possède pas ou très peu d'éléments mécaniques, ce qui la rend très
-					résistante aux chocs.
+					 Une clé USB est un support de stockage amovible, inventé dans les années 2000 et prévue pour pouvoir se brancher sur un port USB d'un ordinateur mais qui est, depuis plusieurs années, largement utilisé sur d'autres appareils (chaînes Hi-Fi, lecteurs de DVD de salon, autoradios, radiocassettes, téléviseurs, etc.). Une clé USB contient une mémoire flash et ne possède pas ou très peu d'éléments mécaniques, ce qui la rend très résistante aux chocs.Une clé USB est un support de stockage amovible, inventé dans les années 2000 et prévue pour pouvoir se brancher sur un port USB d'un ordinateur mais qui est, depuis plusieurs années, largement utilisé sur d'autres appareils (chaînes Hi-Fi, lecteurs de DVD de salon, autoradios, radiocassettes, téléviseurs, etc.). Une clé USB contient une mémoire flash et ne possède pas ou très peu d'éléments mécaniques, ce qui la rend très résistante aux chocs.
+					 Une clé USB est un support de stockage amovible, inventé dans les années 2000 et prévue pour pouvoir se brancher sur un port USB d'un ordinateur mais qui est, depuis plusieurs années, largement utilisé sur d'autres appareils (chaînes Hi-Fi, lecteurs de DVD de salon, autoradios, radiocassettes, téléviseurs, etc.). Une clé USB contient une mémoire flash et ne possède pas ou très peu d'éléments mécaniques, ce qui la rend très résistante aux chocs.Une clé USB est un support de stockage amovible, inventé dans les années 2000 et prévue pour pouvoir se brancher sur un port USB d'un ordinateur mais qui est, depuis plusieurs années, largement utilisé sur d'autres appareils (chaînes Hi-Fi, lecteurs de DVD de salon, autoradios, radiocassettes, téléviseurs, etc.). Une clé USB contient une mémoire flash et ne possède pas ou très peu d'éléments mécaniques, ce qui la rend très résistante aux chocs.
+				</p>
+			</div>
+	
+			<div class="div-discript " id="discript2">
+				<p>
+					info....
+				</p>
+			</div>
+					<div class="div-discript" id="discript3">
+				<p>
+					shipping
+				</p>
+			</div>
+					<div class="div-discript" id="discript4">
+				<p>
+					reviews
 				</p>
 			</div>
 		</div>
@@ -199,16 +199,15 @@
 
 
 	</section>
-
 	<footer>
 		<div class="footer1">
-			<div>
+			<div class="f1 col-3 col-m-6 col-s-12">
 				<h3>E-commerce</h3>
 				<p>site ecommerce ou boutique en ligne, profitez des nouvelles collections disponibles ainsi que des
 					promotions au long de l'annee
 				</p>
 			</div>
-			<div>
+			<div class="f1 col-3 col-m-6 col-s-12">
 				<h3>usefull links</h3>
 				<ul>
 					<li><a href="">Home</a> </li>
@@ -219,7 +218,7 @@
 				</ul>
 
 			</div>
-			<div>
+			<div class="f1 col-3 col-m-6 col-s-12">
 				<h3>customer service</h3>
 				<ul>
 					<li><a href="">Patement methode </a></li>
@@ -230,7 +229,7 @@
 					<li><a href="">Privacy policy </a> </li>
 				</ul>
 			</div>
-			<div>
+			<div class="f1 col-3 col-m-6 col-s-12">
 				<h3>My account</h3>
 				<ul>
 					<li><a href="">Sign in </a></li>
@@ -254,9 +253,122 @@
 	</footer>
 
 
+	<div class="modalcnx" id="modalcnx">
+		<div class="cnx w1">
+			<form>
+				<span class="close">&times;</span>
+				<h1>Se connecter</h1>
+				<div class="socialmedia">
+					<p> <a href=""><i class="fab fa-google"> </i></a> </p>
+					<p> <a href=""><i class="fab fa-facebook"> </i></a> </p>
+					<p> <a href=""><i class="fab fa-twitter-square"> </i></a></p>
+
+				</div>
+				<p class="choosemail"><b>Ou utiliser mon adresse email</b></p>
+				<div class="inputs">
+					<input type="email" name="mail" placeholder="Mail">
+					<input type="password" name="password" placeholder="Password">
+				</div>
+				<p class="lien-inscr"><b>Je n'ai pas de compte, <a href="" id="btninsc">Je m'inscrit</a> </b></p>
+				<div class="btn">
+					<button type="submit"> <a href=""> Se connecter </a> </button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!-- le modal d'inscription-->
+	<div class="modalinsc" id="modalinsc">
+		<div class="cnx w2">
+			<form>
+				<span class="close">&times;</span>
+
+				<h2>Creation de compte</h2>
+				<div class="form-div">
+					<label class="label-input">Nom *</label>
+					<input type="text" name="first-name">
+				</div>
+
+				<div class="form-div">
+					<label class="label-input">Prenom *</label>
+					<input type="text" name="last-name">
+				</div>
+
+				<div class="form-div">
+					<label class="label-input">Mot de passe *</label>
+					<input type="password" name="psw">
+				</div>
+
+				<div class="form-div">
+					<label class="label-input">Confirmation*</label>
+					<input type="password" name="first-name">
+				</div>
+
+				<div class="form-div">
+					<label class="label-input">E-mail *</label>
+					<input type="email" name="mail">
+				</div>
+
+				<div class="form-div">
+					<label class="label-input">Confirmation*</label>
+					<input type="email" name="first-name">
+				</div>
+
+				<div class="form-div  type">
+					<!-- pk sa marche pas la class form-div avec text-align=center si c a cause le flex -->
+					<label
+						class="label-input">Gender*</label><!-- pk sa marche pas la class label-input avec text-align=left   -->
+					<div class="gender">
+						<input type="radio" name="fav_language">
+						<label>Femme</label>
+
+						<input type="radio" name="fav_language">
+						<label>Homme</label>
+
+					</div>
+				</div>
+
+				<div class="form-div">
+					<label class="label-input">N° Tel</label>
+					<input type="tel" name="phone">
+				</div>
+				<div class="btn">
+					<button> <a href=""> S'inscrire</a></button>
+				</div>
+			</form>
+
+		</div>
+
+	</div>
+
+
+
+	<div class="cart" id="cart">
+		<span class="close">&times;</span>
+
+		<h2>YOUR CART</h2>
+		<div class="cart-item">
+			<img src="public/img/e3.jfif">
+			<p>shirt <br>1500dzd</p>
+		</div>
+		<div class="cart-item">
+			<img src="public/img/e3.jfif">
+			<p>shirt <br>1500dzd</p>
+		</div>
+		<div class="cart-item">
+			<img src="public/img/e3.jfif">
+			<p>shirt <br>1500dzd</p>
+		</div>
+		<h2>TOTAL :</h2>
+		<div class="btn-cart">
+			<button>View cart</button>
+			<button>check out</button>
+		</div>
+	</div>
 
 </body>
 
 </html>
+<script src="public/js/detail.js"></script>
 <script src="public/js/modal.js"></script>
- 
+<script src="public/js/liste.js"></script>
