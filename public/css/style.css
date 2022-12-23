@@ -1,0 +1,344 @@
+html {
+	float: left;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	float: left;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+header {
+
+	float: left;
+	width: 100%;
+	height: 710px;
+}
+
+section {
+	float: left;
+	width: 100%;
+}
+
+footer {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.logo {
+	float: left;
+	width: 15%;
+}
+
+.menu {
+	float: left;
+	width: 85%;
+	height: auto;
+	align-items: center;
+	display: flex;
+
+}
+
+
+.menu ul {
+	float: left;
+	width: 65%;
+	display: flex;
+	list-style: none;
+	font-size: 18px;
+}
+
+.menu ul li {
+	margin-right: 6%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.menu a:hover {
+	color: rgb(25 129 216);
+}
+
+.menu form {
+	float: left;
+	width: 20%;
+}
+
+.menu form input {
+	border-radius: 20px;
+	border: none;
+	padding: 4%;
+	text-align: center;
+	background-color: #F4F6F7;
+
+}
+
+.menu p {
+	float: left;
+	width: 5%;
+}
+
+.slide1 {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-image: url("../img/1.jpg");
+}
+
+.slide2 {
+	width: 100%;
+	transition-duration: 3s;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-image: url("../img/2.jpg");
+}
+
+.slide3 {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-image: url("../img/3.jpg");
+}
+
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 45%;
+	padding: 16px;
+	font-size: 30px;
+	border: none;
+	background-color: transparent;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+}
+
+.txt-btn {
+	width: 80%;
+	float: left;
+	font-size: 30px;
+	margin: 5%;
+}
+
+
+.txt-btn button {
+	border-radius: 20px;
+	padding: 1%;
+	font-size: 20px;
+	border: none;
+	background-color: rgb(155 155 255);
+}
+
+.txt-btn p {
+	animation-duration: 2s;
+	animation-name: slide-p;
+
+}
+
+@keyframes slide-p {
+	from {
+		margin-left: 30%;
+	}
+
+	to {
+		margin-left: 0%;
+	}
+}
+
+
+.txt-btn h1 {
+	animation-duration: 2s;
+	animation-name: slide-h;
+}
+
+@keyframes slide-h {
+	from {
+		margin-left: 20%;
+		width: 100%;
+	}
+
+	to {
+		margin-left: 0%;
+		width: 100%;
+	}
+}
+
+
+.txt-btn .btn-acheter {
+	animation-duration: 2s;
+	animation-name: slide-btn;
+}
+
+/*@keyframes slide-btn{
+0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}*/
+
+@keyframes slide-btn {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+.container h1 {
+	font-size: 35px;
+	margin-left: 3%;
+}
+
+.menu-2 ul {
+	display: flex;
+	list-style: none;
+}
+
+.menu-2 ul li {
+	font-size: 18px;
+	margin-right: 3%;
+}
+
+.menu-2 ul a:hover {
+
+	text-decoration: underline;
+	color: grey;
+}
+
+/*.articles{
+	float: left;
+	width: 100%;
+  	display: flex;
+    justify-content: space-around;
+}*/
+.article {
+	width: 20%;
+	text-align: center;
+}
+
+.img {
+	overflow: hidden;
+	width: 100%;
+	height: 350px;
+}
+
+.article img {
+	width: 80%;
+}
+
+.article img:hover {
+	transform: scale(1.1);
+	transition-duration: 2s;
+
+}
+
+
+.video {
+	text-align: center;
+}
+
+iframe {
+	width: 90%;
+	height: 500px;
+}
+
+
+
+/*footer*/
+.footer1 {
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid;
+
+}
+
+.f1 {
+	width: 20%;
+}
+
+.footer1 h3,
+.footer1 p {
+	margin-left: 14%;
+
+}
+
+.footer1 ul {
+	list-style: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+.footer2 {
+	text-align: center;
+}
+
+.iconmenu {
+	float: right;
+	width: 10%;
+	margin-top: 5%;
+	display: none;
+
+}
+
+.iconmenu button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+
+}
+
+@media screen and (max-width:700px) {
+
+	/* header{
+	background-image: url("../img/bgwomen-s.png");
+}
+ 	 */
+	.menu {
+		width: 30%;
+		height: 100%;
+		position: fixed;
+		display: none;
+		flex-direction: column;
+		background-color: rgb(240, 255, 240);
+	}
+
+	.menu ul {
+		flex-direction: column;
+		display: flex;
+		text-align: center;
+	}
+
+	.menu li {
+		margin-bottom: 8%;
+
+	}
+
+	.menu form {
+		width: 100%;
+		margin-bottom: 8%;
+	}
+
+	.menu p {
+		width: 25%;
+		margin-left: 8%;
+	}
+
+	.iconmenu {
+		display: block;
+	}
+}
